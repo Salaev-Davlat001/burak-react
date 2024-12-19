@@ -7,6 +7,7 @@ import {
   Stack,
   Typography,
 } from "../../node_modules/@mui/material/index";
+import { RippleBadge } from "./MaterialTheme/styled";
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
             Create React App on TypeScript with REDUX
           </Typography>
         </Box>
-        <Button variant="contained">Contained</Button>
+        <Box>
+          <RippleBadge badgeContent={4}>
+            <Button variant="contained">Contained</Button>
+          </RippleBadge>
+        </Box>
       </Stack>
     </Container>
   );
