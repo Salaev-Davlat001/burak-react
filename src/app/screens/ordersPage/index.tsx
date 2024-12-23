@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../../../../node_modules/@mui/material/index";
 
-export function OrdersPage() {
+export default function OrdersPage() {
   return <Container>OrdersPage</Container>;
 }

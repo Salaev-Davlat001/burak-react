@@ -1,7 +1,8 @@
 import { Box, Button, Container, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import Basket from "./Basket";
 
-export function OtherNavbar() {
+export default function OtherNavbar() {
   const authMember = null;
   return (
     <div className="other-navbar">
@@ -9,7 +10,7 @@ export function OtherNavbar() {
         <Stack className="menu">
           <Box>
             <NavLink to="/">
-              <img className="brand-logo" src="/icons/burak.svg" alt="logo" />
+              <img className="brand-logo" src="/icons/burak.svg" alt="" />
             </NavLink>
           </Box>
           <Stack className="links">
@@ -40,7 +41,7 @@ export function OtherNavbar() {
                 Help
               </NavLink>
             </Box>
-            {/*Basket*/}
+            <Basket />
             {!authMember ? (
               <Box>
                 <Button variant="contained" className="login-button">
@@ -52,7 +53,7 @@ export function OtherNavbar() {
                 className="user-avatar"
                 src="/icons/default-user.svg"
                 aria-haspopup={"true"}
-                alt="user image"
+                alt=""
               />
             )}
           </Stack>

@@ -1,18 +1,18 @@
 import { Route, Switch, useLocation } from "react-router-dom";
-import { HomePage } from "./screens/homePage/index";
-import { ProductsPage } from "./screens/productsPage/index";
-import { OrdersPage } from "./screens/ordersPage/index";
-import { UserPage } from "./screens/userPage/index";
-import { OtherNavbar } from "./components/headers/OtherNavbar";
-import { HomeNavbar } from "./components/headers/HomeNavbar";
-import { Footer } from "./components/footer";
+import HomePage from "./screens/homePage/index";
+import ProductsPage from "./screens/productsPage/index";
+import OrdersPage from "./screens/ordersPage/index";
+import UserPage from "./screens/userPage/index";
+import HelpPage from "./screens/helpPage";
+import OtherNavbar from "./components/headers/OtherNavbar";
+import HomeNavbar from "./components/headers/HomeNavbar";
+import Footer from "./components/footer";
 import "../css/app.css";
 import "../css/navbar.css";
-import { HelpPage } from "./screens/helpPage";
+import "../css/footer.css";
 
 function App() {
   const location = useLocation();
-  console.log("location:", location);
   return (
     <>
       {location.pathname === "/" ? <HomeNavbar /> : <OtherNavbar />}
