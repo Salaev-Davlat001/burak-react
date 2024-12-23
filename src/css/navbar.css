@@ -6,6 +6,43 @@
   background-size: cover;
 }
 
+.home-navbar .navbar-container {
+  margin-top: 55px;
+  height: 642px;
+}
+
+.home-navbar .navbar-container .menu {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-navbar .navbar-container .menu .brand-logo {
+  width: 125px;
+  height: 30px;
+}
+
+.home-navbar .navbar-container .menu .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 700px;
+  align-items: center;
+}
+
+.home-navbar .navbar-container .menu .links .login-button {
+  background: #3776cc;
+  color: #f8f8ff;
+}
+
+.home-navbar .navbar-container .menu .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 24px;
+}
+
 .home-navbar a {
   text-decoration: none;
 }
@@ -25,12 +62,12 @@
   display: block;
   content: "";
   border-bottom: solid 2px #d7b686;
-  transform: scaleX(0);
-  transition: transfrom 250ms ease-in-out;
+  transform: scale(0);
+  transition: all 250ms ease-in-out;
 }
 
 .home-navbar .hover-line:hover:after {
-  transform: scaleX(1);
+  transform: scale(1);
 }
 
 .home-navbar div.hover-line:after {
