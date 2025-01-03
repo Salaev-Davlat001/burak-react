@@ -7,7 +7,6 @@ import Typography from "@mui/joy/Typography";
 import { CssVarsProvider } from "@mui/joy/styles";
 import CardOverflow from "@mui/joy/CardOverflow";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 
 const list = [
