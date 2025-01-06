@@ -40,7 +40,7 @@ export default function ChosenProduct() {
             <strong className={"product-name"}>Kebab</strong>
             <span className={"resto-name"}>Burak</span>
             <Box className={"rating-box"}>
-              <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+              <Rating name="half-rating" defaultValue={4.5} precision={0.5} />
               <div className={"evaluation-box"}>
                 <div className={"product-view"}>
                   <RemoveRedEyeIcon sx={{ mr: "10px" }} />
