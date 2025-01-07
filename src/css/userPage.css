@@ -1,0 +1,293 @@
+.user-page {
+  width: 100%;
+  height: auto;
+  background: #f8f8ff;
+  display: flex;
+}
+
+.user-page .user-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.user-page .user-container .user-left {
+  display: flex;
+  flex-direction: column;
+  width: 820px;
+  height: auto;
+  padding-top: 70px;
+}
+.user-page .user-container .user-left .upload {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.user-page .user-container .user-left .menu-name {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #f8f8ff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  color: #f8f8ff;
+}
+.user-page .user-container .user-left .menu-content {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-page .user-container .user-left .user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin: 10px;
+}
+
+.user-page .user-container .user-left .upload-img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.user-page .user-container .upload-img .upload-title {
+  color: #140342;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.user-page .user-container .upload-img .upload-text {
+  color: #4f547b;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-page .user-container .upload-img .download-btn {
+  width: 37px;
+  height: 37px;
+  border-radius: 8px;
+  background: #cbcbcb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.user-page .user-container .upload-img .download-btn input {
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  padding: 0;
+  background: red;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.user-page .user-container .user-left .user-name {
+  height: 54px;
+  width: 100%;
+  border-radius: 5px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  color: #4f547b;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 59px;
+  border: none;
+}
+
+.user-page .user-container .user-left .user-phone {
+  height: 54px;
+  width: 49%;
+  border-radius: 5px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  color: #4f547b;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 15.5px;
+  border: none;
+}
+
+.user-page .user-container .user-left .user-address {
+  height: 54px;
+  width: 49%;
+  border-radius: 5px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  color: #4f547b;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+}
+
+.user-page .user-container .user-left .text-area {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #4f547b;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 59px;
+  border: none;
+  resize: none;
+}
+
+.user-page .user-container .user-left .text-area-btn {
+  margin-top: 20px;
+  margin-left: 746px;
+}
+/*RIGHT SIDE */
+.user-page .user-container .user-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 360px;
+  height: 400px;
+}
+
+.user-page .user-container .user-info-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 360px;
+  height: auto;
+  padding-top: 20px;
+  align-items: center;
+  background: #f8f8ff;
+  box-shadow: 15px 14px 4px rgba(0, 0, 0, 0.25),
+    inset -1px 0px 16px 13px rgb(24 23 112 / 20%);
+  border-radius: 16px;
+  margin-bottom: 5px;
+}
+.user-page .user-container .member-box {
+  width: 50%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-page .user-right .user-info-box .user-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-page .user-info-box .user-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-page .user-info-box .user-avatar {
+  width: 160px;
+  height: 162px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 37px;
+}
+.user-page .user-info-box .user-icon-box {
+  position: absolute;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  top: 81%;
+  right: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.33);
+  border-radius: 37px;
+}
+.user-page .user-icon-box .user-prof-img {
+  filter: brightness(0) invert(1);
+}
+.user-page .user-info-box .user-name {
+  margin-top: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #08090d;
+}
+.user-page .user-info-box .user-prof {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #a1a1a1;
+}
+
+.user-page .user-info-box .user-address {
+  margin-bottom: 20px;
+  color: #a1a1a1;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.user-page .user-right .user-info-box .social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 30.27px;
+  padding-right: 5px;
+}
+
+.user-page .user-right .social-medias .social-medias-icons {
+  height: 15.27px;
+  width: 15px;
+}
+
+.user-page .user-right .member-box .user-info {
+  color: #616164;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
