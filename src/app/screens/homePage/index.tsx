@@ -11,7 +11,6 @@ import Test from "../Test";
 export default function HomePage() {
   return (
     <div className="homepage">
-      <Test />
       <Statistics />
       <PopularDishes />
       <NewDishes />
