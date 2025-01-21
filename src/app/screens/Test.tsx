@@ -1,44 +1,41 @@
-//ts-nocheck
+// @ts-nocheck
 import React, { Component } from "react";
 
-class Test extends Component {
+class Test extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       brand: "Ford",
       model: "Mustang",
       color: "red",
-      year: 1963,
+      year: 1964,
     };
   }
-
   changeDetail = () => {
     this.setState({
       color: "blue",
       brand: "Tesla",
       model: "Model S",
-      year: 2023,
+      year: 2024,
     });
   };
 
   componentDidMount() {
     console.log("componentDidMount");
-    //runs after first render => RETRIEVE DATA FROM BACKEND SERVER
+    // runs after first render => RETRIEVE DATA FROM BACKEND SERVER
   }
 
-  componentWillUnMount() {
-    console.log("componentWillUnMount");
-    //runs before component unmount
+  componentWillUnmount() {
+    console.log("componentWillUnmount");
+    // runs before component unmount
   }
-
-  componentDidUpdate() {}
 
   render() {
     return (
       <div>
-        <h1>My {this.state.brand}</h1>
+        <h1>Brand: {this.state.brand}</h1>
         <p>
-          Color: {this.state.color} - Model: {this.state.model} from{" "}
+          Model: {this.state.color} - {this.state.model} - since
           {this.state.year}.
         </p>
         <button type="button" onClick={this.changeDetail}>
