@@ -29,6 +29,8 @@ export default function HomePage() {
   const { popularDishes } = useSelector(popularDishesRetriever);
   //Selector: Store => Data
 
+  console.log(process.env.REACT_APP_API_URL);
+
   useEffect(() => {}, []);
   console.log("popularDishes:", popularDishes);
   return (
