@@ -16,15 +16,18 @@ import "../../../css/home.css";
 import MemberService from "../../services/MemberService";
 import { Member } from "../../../lib/types/member";
 
+//shu yerdan
+/** ACTION **/
 const actionDispatch = (dispatch: Dispatch) => ({
   setPopularDishes: (data: Product[]) => dispatch(setPopularDishes(data)),
   setNewDishes: (data: Product[]) => dispatch(setNewDishes(data)),
   setTopUsers: (data: Member[]) => dispatch(setTopUsers(data)),
 });
+/** ACTION **/
 
 export default function HomePage() {
   const { setPopularDishes, setNewDishes, setTopUsers } = actionDispatch(
-    useDispatch()
+    useDispatch() //slice
   );
 
   useEffect(() => {
@@ -38,7 +41,7 @@ export default function HomePage() {
         search: "",
       })
       .then((data) => {
-        console.log("data passed here:", data);
+        // backend data fetch => []
         setPopularDishes(data);
       })
       .catch((err) => console.log(err));
@@ -64,6 +67,7 @@ export default function HomePage() {
       .catch((err) => console.log(err));
   }, []);
 
+  //shu yergacha
   return (
     <div className="homepage">
       <Statistics />
