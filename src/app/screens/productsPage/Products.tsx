@@ -271,7 +271,6 @@ export default function Products(props: ProductsProps) {
                         <Button
                           className={"shop-btn"}
                           onClick={(e) => {
-                            alert("BUTTON PRESSED");
                             onAdd({
                               _id: product._id,
                               quantity: 1,
