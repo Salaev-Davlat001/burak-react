@@ -8,7 +8,7 @@ export const sweetErrorHandling = async (err: any) => {
   await Swal.fire({
     icon: "error",
     text: message,
-    showConfirmButton: false,
+    showConfirmButton: true,
   });
 };
 
